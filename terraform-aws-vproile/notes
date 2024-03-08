@@ -1,0 +1,8 @@
+here i will writye the things that nneds to thought worth noting for the project. 
+1. use terraform registry to get the ready made pakages to lauch stuff on cloud. like voc etc,
+2. I DevOps, you need to use the standard DevOps practice when you are using terraform. Like use version control for you iaac , use s3 to maintain the state, use proper se=ytax checking for iaac , use vars file with all the info that can be recreated later. 
+3.use mysql version 5.7.337 as this is the least or oldest version in the res database selection section.
+4. Since we are using the v  for mysql we will use parameter group default.mysql.5.7
+5. Also use identifier to name the ads that you are creating.
+6. Use db_name for creation of database I the ads instance that will get launched.
+7. Use associate_public_ip_address = true in bastion host file to get rid of the host cannot be empty in bastion.tf file.
